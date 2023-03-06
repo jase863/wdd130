@@ -1,0 +1,99 @@
+#entire{
+    display: grid;
+    grid-gap: 1px;
+    background-color: black;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+}
+.picture{
+    grid-column: 1/4;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    width: 302px;
+}
+.big-box{
+    grid-row: 3/6;
+    grid-column: 1/4;
+    z-index: 1;
+    background-color: white;
+}
+.three-WK{
+    padding-top: 115px;
+    text-align: center;
+    grid-column: 2/3;
+    color: rgb(77, 93, 157);
+    z-index: 4;
+    font-size: 14px;
+}
+.post{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 3;
+    padding-top: 30px;
+    color: black;
+    z-index: 4;
+}
+.para{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 4/8;
+    padding-right: 50px;
+    padding-left: 50px;
+    z-index: 2;
+    color: gray;
+}
+.box-1{
+    background-color: rgb(77, 93, 157);
+    grid-column: 1/2;
+    grid-row: 6/7;
+    border-radius: 0px 0px 0px 15px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+.box-2{
+    background-color: rgb(77, 93, 157);
+    grid-column: 2/3;
+    grid-row: 6/7;
+    text-align: center;
+    color: white;
+}
+.box-3{
+    background-color: rgb(77, 93, 157);
+    grid-column: 3/4;
+    grid-row: 6/7;
+    border-radius: 0px 0px 15px 0px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+.bottom-sub-1{
+    color: white;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    justify-self: center;
+    padding-top: 35px;
+    font-size: 12px;
+
+}
+.bottom-sub-2{
+    color: white;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    justify-self: center;
+    padding-top: 35px;
+    font-size: 12px;
+}
+.bottom-sub-3{
+    color: white;
+    grid-column: 3/4;
+    grid-row: 6/7;
+    justify-self: center;
+    padding-top: 35px;
+    font-size: 12px;
+}
+sup{
+    vertical-align: super;
+    font-size: small;
+}
