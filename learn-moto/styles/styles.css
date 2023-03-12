@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@0;1&family=Kanit:ital,wght@0,600;1,500&display=swap');
+#entire_page{
+    max-width: 100%;
+    margin: 10px;
+}
+#home_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo{
+    width: 100px;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2/6;
+}
+.header-nav a{  /* FIX THIS! */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 50px;
+    font-family: "Kanit";
+    font-size: 25px;
+}
+nav a:hover{
+    transform: scale(1.2);
+    text-shadow: 1px 1px 5px white;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: #184477;
+}
+.heading{
+    font-family: "Kanit";
+}
+.paragraph{
+    font-family: "Cantarell";
+}
+#page-info-box{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+#page-info-box h1{
+    grid-column: 5/7;
+    justify-self: center;
+    margin-top: 10px;
+    font-size: 45px;
+}
+#welcome{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    padding: 50px 100px 0px 100px;
+}
+* {box-sizing:border-box}
+.home-slides{
+  width: 500px;
+  grid-column: 4/8;
+  position: absolute;
+  left: 65px;
+  top: 75px
+}
+.mySlides{
+  display: none;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+/* .numbers{
+  color: #95162E;
+  background-color: #969292;
+  font-size: 17px;
+  font-family: "Kanit";
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* #purpose-box{
+    width: 300px;
+    height: 3000x;
+}
+#purpose{
+    font-size: 5px;
+    width: 100px;
+    height: 50px;
+}
+#purpose-box:hover{
+    transform: scale(3.1);
+    translate: 1000px 200px;
+}
+   */
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 459px);
+    grid-template-rows: repeat(2, 200px);
+    margin: 10px;
+}
+.footer-pic{
+    grid-column: 1/5;
+    max-width: 100%;
+    z-index: 1;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2/4;
+}
+.footer-nav a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 0px 50px 50px 0px;
+    font-family: "Kanit";
+    font-size: 25px;
+    z-index: 2;
+}
+.footer-logo{
+    grid-column: 1;
+    z-index: 2;
+    width: 200px;
+    margin-top: 310px;
+    margin-left: 100px;
+}
+
+/* gear page */
+.gear-fnav{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2/4;
+}
+.gear-fnav a{
+    text-align: center;
+    text-decoration: none;
+    color: #95162E;
+    padding: 0px 50px 50px 0px;
+    font-family: "Kanit";
+    font-size: 25px;
+    z-index: 2;
+}
+.gear-slides{
+    width: 500px;
+    grid-column: 4/8;
+    position: absolute;
+    left: 65px;
+    top: 75px
+}
+#gear-info-box{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
