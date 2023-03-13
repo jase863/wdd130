@@ -60,7 +60,31 @@
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <!-- I also have javascript for changing the slides. I will incorporate that in a later week. -->
+            <!-- click on the arrows to advance the pictures in the slideshow -->
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Arrow controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+                // Thumbnail controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+                }
+            </script>
         </div>
         <main>
             <section id="helmets">
