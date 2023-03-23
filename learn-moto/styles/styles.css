@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@0;1&family=Kanit:ital,wght@0,600;1,500&display=swap');
 #entire_page{
     width: 1830px;
-    margin-right: 1%;
+    margin-right: auto;
+    margin-left: auto;
 }
 #home_link{
     padding-top: 2%;
@@ -235,8 +236,7 @@ header{
     font-size: 30px;
     grid-column: 2/3;
     grid-row: 1;
-    width: 300px;
-    margin-right: 115px;
+    width: 40%;
 }
 .dirt{
     justify-self: center;
@@ -334,11 +334,12 @@ footer{
 }
 .gear-slides{
     width: 500px;
+    height: auto;
     grid-column: 4;
     grid-row: 1;
-    position: relative;
-    top: -305px;
-    left: 60%;
+    position: absolute;
+    top: 23%;
+    right: 5%;
 }
 .gear-page-heading{
     font-family: "Kanit";
