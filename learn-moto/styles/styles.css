@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@0;1&family=Kanit:ital,wght@0,600;1,500&display=swap');
 #entire_page{
-    max-width: 1830px;
-    margin-left: 5px;
+    width: 1830px;
+    margin-right: 1%;
 }
 #home_link{
-    padding-top: 5px;
+    padding-top: 2%;
     justify-self: center;
     align-self: center;
 }
 .logo{
     width: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .header-nav{
     display: flex;
@@ -20,7 +21,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    padding: 50px;
+    padding: 5%;
     font-family: "Kanit";
     font-size: 25px;
 }
@@ -54,14 +55,16 @@ header{
     text-align: left;
     grid-column: 1;
     grid-row: 1/2;
-    margin: 50px 30px;
+    margin: 9% 9%;
 }
 * {box-sizing:border-box}
 .home-slides{
   grid-column: 2;
   position: absolute;
-  left: 65px;
-  top: 130px;
+  left: 5%;
+  top: 25%;
+  width: 500px;
+  height: auto;
 }
 .mySlides{
   display: none;
@@ -112,8 +115,8 @@ header{
     font-family: "Kanit";
     grid-column: 2;
     justify-self: center;
-    margin-top: 10px;
-    margin-left: 60px;
+    margin-top: 5%;
+    margin-right: -10%;
     font-size: 45px;
 }
 #purpose .heading{
@@ -124,8 +127,7 @@ header{
     font-size: 15px;
     grid-column: 3;
     grid-row: 1/2;
-    margin: 50px 50px 0px 110px;
-    max-width: 500px;
+    margin: 9% 7% 0px 8%;
 }
 #street-grid{
     display: grid;
@@ -141,7 +143,7 @@ header{
     font-size: 30px;
     grid-column: 2/4;
     grid-row: 1;
-    width: 300px;
+    width: 35%;
 }
 .type-paragraph{
     font-family: "Cantarell";
@@ -154,10 +156,11 @@ header{
     color: white;
     grid-column: 1;
     grid-row: 1;
-    margin: 150px 20px 0px 10px;
-    padding: 10px;
+    margin: 33% 2% 0px 1%;
+    padding: 2%;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .cruiser{
     justify-self: center;
@@ -165,10 +168,11 @@ header{
     color: white;
     grid-column: 2;
     padding: 10px;
-    margin: 150px 5px 0px 0px;
+    margin: 33% 1% 0px 0px;
     grid-row: 1;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .touring{
     justify-self: center;
@@ -176,10 +180,11 @@ header{
     color: white;
     grid-column: 3;
     padding: 10px;
-    margin: 150px 2px 0px 0px;
+    margin: 33% 1% 0px 0px;
     grid-row: 1;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .adventure{
     justify-self: center;
@@ -187,10 +192,11 @@ header{
     color: white;
     grid-column: 4;
     padding: 10px;
-    margin: 150px -5px 0px 0px;
+    margin: 33% 0% 0px 0px;
     grid-row: 1;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .trike{
     justify-self: center;
@@ -199,9 +205,10 @@ header{
     grid-column: 2;
     padding: 10px;
     grid-row: 2;
-    margin: 50px 10px 100px 5px;
+    margin: 11% 2% 22% 0.5%;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .chopper{
     justify-self: center;
@@ -210,9 +217,10 @@ header{
     grid-column: 3;
     padding: 10px;
     grid-row: 2;
-    margin: 50px 10px 100px 7px;
+    margin: 11% 2% 22% 0.7%;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 #dirt-grid{
     display: grid;
@@ -236,10 +244,11 @@ header{
     color: white;
     grid-column: 1;
     grid-row: 1;
-    margin: 150px 20px 100px 10px;
+    margin: 25% 5% 17% 2%;
     padding: 10px;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .dual-sport{
     justify-self: center;
@@ -247,10 +256,11 @@ header{
     color: white;
     grid-column: 2;
     grid-row: 1;
-    margin: 150px 20px 100px 10px;
+    margin: 25% 4% 17% 2%;
     padding: 10px;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .mx{
     justify-self: center;
@@ -258,10 +268,11 @@ header{
     color: white;
     grid-column: 3;
     grid-row: 1;
-    margin: 150px 20px 100px 10px;
+    margin: 25% 3% 17% 2%;
     padding: 10px;
     background-color: #184477;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 footer{
     display: grid;
@@ -270,9 +281,10 @@ footer{
 }
 .footer-pic{
     grid-column: 1/5;
-    max-width: 100%;
+    width: 1830px;
+    height: auto;
     z-index: 1;
-    margin-left: -7px;
+    margin-right: .4%;
     border-radius: 15px 15px 0px 0px;
     justify-self: center;
 }
@@ -314,34 +326,49 @@ footer{
 }
 
 /* gear page */
+#gear-info-box{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(1, 1fr);
+}
+.gear-slides{
+    width: 500px;
+    grid-column: 4;
+    grid-row: 1;
+    position: relative;
+    top: -305px;
+    left: 60%;
+}
+.gear-page-heading{
+    font-family: "Kanit";
+    grid-column: 5;
+    justify-self: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+}
+#why-gear{
+    grid-column: 1/5;
+    grid-row: 1;
+    z-index: 1;
+    margin: 10% 0% 0% 10%;
+}
 .gear-fnav{
     display: flex;
     justify-content: space-evenly;
     grid-column: 2/4;
+    margin-top: 10%;
 }
 .gear-fnav a{
     text-align: center;
     text-decoration: none;
-    color: #95162E;
-    padding: 0px 50px 50px 0px;
+    color: #184477;
     font-family: "Kanit";
     font-size: 25px;
     z-index: 2;
 }
-.gear-slides{
-    width: 500px;
-    grid-column: 4/8;
-    position: absolute;
-    left: 65px;
-    top: 75px;
-}
-#gear-info-box{
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, 450px);
-}
-
 /* Contact Us Page */
 .contact-footer{
     display: grid;
