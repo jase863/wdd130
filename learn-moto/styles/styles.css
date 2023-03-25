@@ -22,6 +22,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
+    text-shadow: 2px 2px black;
     padding: 5%;
     font-family: "Kanit";
     font-size: 25px;
@@ -297,6 +298,7 @@ footer{
     text-align: center;
     text-decoration: none;
     color: white;
+    text-shadow: 2px 2px black;
     padding: 75px 50px 0px 0px;
     font-family: "Kanit";
     font-size: 25px;
@@ -331,15 +333,17 @@ footer{
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(1, 1fr);
+    margin-bottom: 2%;
+    border-bottom: solid #969292;
 }
 .gear-slides{
-    width: 500px;
+    width: fit-content;
     height: auto;
     grid-column: 4;
     grid-row: 1;
     position: absolute;
     top: 23%;
-    right: 5%;
+    right: 10%;
 }
 .gear-page-heading{
     font-family: "Kanit";
@@ -354,7 +358,384 @@ footer{
     grid-column: 1/5;
     grid-row: 1;
     z-index: 1;
-    margin: 10% 0% 0% 10%;
+    margin: 10% 0% 10% 10%;
+}
+#helmets-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 25%);
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 1%;
+    border-bottom: solid #969292;
+}
+.street-helm-heading{
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.full-face{
+    grid-column: 1;
+    margin-top: -10%;
+    width: fit-content;
+    height: 98%;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.full-face-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    margin: -45% -10% 0% 50%;
+    width: fit-content;
+    height: fit-content;
+}
+.modular{
+    grid-column: 1;
+    margin-top: -20%;
+    width: fit-content;
+    height: 98%;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.modular-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    margin: -55% -10% 0% 50%;
+    width: fit-content;
+    height: fit-content;
+}
+.three-quarter{
+    grid-column: 1;
+    margin-top: -30%;
+    width: fit-content;
+    height: 250%;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.three-quarter-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    margin: -45% -10% 0% 50%;
+    width: fit-content;
+    height: fit-content;
+}
+.half-helmet{
+    grid-column: 1;
+    margin-top: 15%;
+    width: fit-content;
+    height: 60%;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.half-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    margin: -45% -10% 25% 50%;
+    width: fit-content;
+    height: fit-content;
+}
+.dirt-helm-heading{
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.dirt-helmet{
+    grid-column: 1;
+    margin-top: 5%;
+    width: fit-content;
+    height: 70%;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.dirt-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    margin: -45% -10% 25% 50%;
+    width: fit-content;
+    height: fit-content;
+}
+#gloves-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 45%);
+    grid-template-rows: repeat(6, 1fr);
+    margin: -87% 0% -87% 30%;
+    padding-bottom: 8%;
+    z-index: 2;
+    margin-bottom: 15%;
+    border-left: solid #969292;
+}
+.street-gloves-heading{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 3%;
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15%;
+}
+.gauntlet{
+    grid-column: 1;
+    grid-row: 1/3;
+    margin: 19% 0% 0% 15%;
+    width: fit-content;
+    height: 40%;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.gauntlet-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    grid-row: 1/3;
+    margin: 19% -7% 25% 55%;
+    width: fit-content;
+    height: fit-content;
+}
+.short-street{
+    grid-column: 1;
+    grid-row: 2/4;
+    margin: 25% 0% 0% 15%;
+    width: fit-content;
+    height: 40%;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.short-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    grid-row: 2/4;
+    margin: 25% -7% 25% 55%;
+    width: fit-content;
+    height: fit-content;
+}
+.fingerless-gloves{
+    grid-column: 1;
+    grid-row: 3/5;
+    margin: 31% 0% 0% 15%;
+    width: fit-content;
+    height: 40%;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.fingerless-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    grid-row: 4/6;
+    margin: -10% -7% 25% 55%;
+    width: fit-content;
+    height: fit-content;
+}
+.dirt-gloves-heading{
+    grid-column: 1;
+    grid-row: 5;
+    margin-top: -4%;
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15%;
+}
+.dirt-gloves{
+    grid-column: 1;
+    grid-row: 6;
+    margin: -25% 0% 0% 15%;
+    width: fit-content;
+    height: 70%;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.dirt-gloves-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    grid-row: 6/7;
+    margin: -25% -7% 0% 55%;
+    width: fit-content;
+    height: fit-content;
+}
+#boots-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 85%);
+    grid-template-rows: repeat(5, 1fr);
+    margin: -100.2% 0% -87% 64%;
+    padding-bottom: 28%;
+    margin-bottom: 5%;
+    border-left: solid #969292;
+}
+.street-boots-heading{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 3%;
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15%;
+}
+.race-boots{
+    grid-column: 1;
+    grid-row: 1/3;
+    margin: 19% 0% 0% 15%;
+    width: fit-content;
+    height: 40%;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.race-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    grid-row: 1/3;
+    margin: 19% -7% 25% 55%;
+    width: fit-content;
+    height: fit-content;
+}
+.leather-boots{
+    grid-column: 1;
+    grid-row: 2/4;
+    margin: 29% 0% 0% 15%;
+    width: fit-content;
+    height: 40%;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.leather-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    grid-row: 2/4;
+    margin: 29% -7% 25% 55%;
+    width: fit-content;
+    height: fit-content;
+}
+.dirt-boots-heading{
+    grid-column: 1;
+    grid-row: 4/5;
+    margin-top: -2%;
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15%;
+}
+.mx-boots{
+    grid-column: 1;
+    grid-row: 6;
+    margin: -60% 0% 0% 15%;
+    width: fit-content;
+    height: 100%;
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.5);
+}
+.mx-p{
+    font-family: "Cantarell";
+    padding-right: 10%;
+    grid-column: 1;
+    grid-row: 6/7;
+    margin: -60% -7% 0% 55%;
+    width: fit-content;
+    height: fit-content;
+}
+#full-street-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 20%);
+    margin-left: 1%;
+}
+.street-gear-heading{
+    grid-column: 1/3;
+    grid-row: 1;
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.full-leather{
+    grid-column: 1/2;
+    grid-row: 1;
+    margin-top: 15%;
+    width: fit-content;
+    height: 80%;
+    justify-self: center;
+    z-index: 1;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.full-leather-p{
+    font-family: "Cantarell";
+    font-size: 30px;
+    grid-column: 1/2;
+    grid-row: 2;
+    padding-right: 10%;
+    grid-column: 1/2;
+    margin-left: 20%;
+}
+.kevlar{
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-top: 15%;
+    width: fit-content;
+    height: 80%;
+    justify-self: center;
+    z-index: 1;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.kevlar-p{
+    font-family: "Cantarell";
+    grid-column: 2/3;
+    grid-row: 2;
+    font-size: 30px;
+    grid-column: 2/3;
+    justify-self: center;
+}
+#full-dirt-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    margin: -36% -10% 0% 50%;
+    padding-left: 9%;
+    padding-right: 1%;
+    z-index: 2;
+    border-left: solid #969292;
+}
+.off-road-heading{
+    grid-column: 1/3;
+    grid-row: 1;
+    font-family: "Kanit";
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+.full-mx{
+    grid-column: 1/2;
+    grid-row: 1;
+    margin-top: 15%;
+    width: fit-content;
+    height: 70%;
+    justify-self: center;
+    z-index: 1;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.full-mx-p{
+    font-family: "Cantarell";
+    font-size: 30px;
+    grid-column: 1/2;
+    grid-row: 2;
+    padding-right: 10%;
+    grid-column: 1/2;
+    margin-left: 18%;
+}
+.mostly-mx{
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-top: 15%;
+    width: fit-content;
+    height: 80%;
+    justify-self: center;
+    z-index: 1;
+    box-shadow: 5px 50px 30px rgba(0, 0, 0, 0.5);
+}
+.mostly-mx-p{
+    font-family: "Cantarell";
+    grid-column: 2/3;
+    grid-row: 2;
+    font-size: 30px;
+    margin-left: 10%;
 }
 .gear-fnav{
     display: flex;
@@ -365,7 +746,8 @@ footer{
 .gear-fnav a{
     text-align: center;
     text-decoration: none;
-    color: #184477;
+    color: white;
+    text-shadow: 2px 2px black;
     font-family: "Kanit";
     font-size: 25px;
     z-index: 2;
