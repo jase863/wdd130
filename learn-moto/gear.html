@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div id="entire_page">
+    <div class="entire_page">
         <header>
             <a id ="home_link" href="index.html">  
                 <img class="logo" src="images/logo-slim-letter.png" alt="Learn Moto Logo">
@@ -39,53 +39,52 @@
                     a good idea to use safety gear.
                 </p>
             </div>
+            <div class="gear-slides">
+                <div class="mySlides fade">
+                    <!-- <div class="numbers">1 / 4</div> -->
+                    <img src="images/honda_motocross_rider.jpg" style="width:100%" alt="honda dirt bike at the sand dunes">
+                </div>
+                <div class="mySlides fade">
+                    <!-- <div class="numbers">2 / 4</div> -->
+                    <img src="images/honda_street_gear1.jpg" style="width:100%" alt="Honda CB rider in helmet and jacket">
+                </div>
+                <div class="mySlides fade">
+                    <!-- <div class="numbers">3 / 4</div> -->
+                    <img src="images/street-gear-nb.jpg" style="width:100%" alt="rider in all leather gear on a naked bike">
+                </div>
+                <div class="mySlides fade">
+                    <!-- <div class="numbers">4 / 4</div> -->
+                    <img src="images/full_face_helmet1.jpg" style="width:100%" alt="vintage full-face helmet">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- click on the arrows to advance the pictures in the slideshow -->
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+    
+                    // Arrow controls
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    // Thumbnail controls
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+    
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    }
+                </script>
+            </div>
         </section>
-        <!-- The images are optimized for a slideshow on the page, which is a lot smaller. They will show up clearer there. -->
-        <div class="gear-slides">
-            <div class="mySlides fade">
-                <!-- <div class="numbers">1 / 4</div> -->
-                <img src="images/honda_motocross_rider.jpg" style="width:100%" alt="honda dirt bike at the sand dunes">
-            </div>
-            <div class="mySlides fade">
-                <!-- <div class="numbers">2 / 4</div> -->
-                <img src="images/honda_street_gear1.jpg" style="width:100%" alt="Honda CB rider in helmet and jacket">
-            </div>
-            <div class="mySlides fade">
-                <!-- <div class="numbers">3 / 4</div> -->
-                <img src="images/street-gear-nb.jpg" style="width:100%" alt="rider in all leather gear on a naked bike">
-            </div>
-            <div class="mySlides fade">
-                <!-- <div class="numbers">4 / 4</div> -->
-                <img src="images/full_face_helmet1.jpg" style="width:100%" alt="vintage full-face helmet">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <!-- click on the arrows to advance the pictures in the slideshow -->
-            <script>
-                let slideIndex = 1;
-                showSlides(slideIndex);
-
-                // Arrow controls
-                function plusSlides(n) {
-                showSlides(slideIndex += n);
-                }
-                // Thumbnail controls
-                function currentSlide(n) {
-                showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slideIndex-1].style.display = "block";
-                }
-            </script>
-        </div>
         <main>
             <section id="helmets-grid">
                 <h1 class="street-helm-heading">

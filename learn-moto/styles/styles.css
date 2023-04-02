@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@0;1&family=Kanit:ital,wght@0,600;1,500&display=swap');
-#entire_page{
+.entire_page{
     width: 1830px;
     margin-right: auto;
     margin-left: auto;
@@ -96,15 +96,7 @@ header{
 .prev:hover, .next:hover{
   background-color: rgba(0,0,0,0.8);
 }
-/* .numbers{
-  color: #95162E;
-  background-color: #969292;
-  font-size: 17px;
-  font-family: "Kanit";
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
+
 .fade{
   animation-name: fade;
   animation-duration: 1.5s;
@@ -337,13 +329,12 @@ footer{
     margin-bottom: 2%;
     border-bottom: solid #969292;
 }
+* {box-sizing:border-box}
 .gear-slides{
-    width: fit-content;
-    height: auto;
-    grid-column: 4;
-    grid-row: 1;
     position: absolute;
-    top: 23%;
+    width: 500px;
+    height: auto;
+    top: 13%;
     right: 10%;
 }
 .gear-page-heading{
@@ -356,6 +347,8 @@ footer{
     font-size: 45px;
 }
 #why-gear{
+    font-family: "Cantarell";
+    font-size: 15px;
     grid-column: 1/5;
     grid-row: 1;
     z-index: 1;
@@ -390,6 +383,7 @@ footer{
     height: fit-content;
 }
 .modular{
+    font-family: "Cantarell";
     grid-column: 1;
     margin-top: -20%;
     width: fit-content;
